@@ -21,3 +21,4 @@ resource textAnalytics 'Microsoft.CognitiveServices/accounts@2017-04-18' = {
     customSubDomainName: textAnalyticsName
   }
 }
+

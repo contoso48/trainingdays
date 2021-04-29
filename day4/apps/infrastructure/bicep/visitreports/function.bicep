@@ -17,6 +17,12 @@ var cosmosAccount = 'cosmos-scm-${env}-${uniqueString(resourceGroup().id)}'
 
 var stgForFunctionConnectionString = 'DefaultEndpointsProtocol=https;AccountName=${stgForFunction.name};AccountKey=${listKeys(stgForFunction.id, stgForFunction.apiVersion).keys[0].value}'
 
+var textAnalyticsName = 'cog-textanalytics-${env}-${uniqueString(resourceGroup().id)}'
+
+resource textAnalytics 'Microsoft.CognitiveServices/accounts@2017-04-18' existing = {
+  name: textAnalyticsName
+}
+
 resource cosmos 'Microsoft.DocumentDB/databaseAccounts@2021-03-15' existing = {
   name: cosmosAccount
 }
@@ -102,11 +108,11 @@ resource funcapp 'Microsoft.Web/sites@2020-12-01' = {
         }
         {
           name: 'TA_SUBSCRIPTIONENDPOINT'
-          value: ''
+          value: textAnalytics.properties.endpoint
         }
         {
           name: 'TA_SUBSCRIPTION_KEY'
-          value: ''
+          value: listKeys(textAnalytics.id, textAnalytics.apiVersion).key1
         }
       ]
     }
