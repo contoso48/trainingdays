@@ -20,14 +20,8 @@ This workshop consists of multiple challenges, you have to complete. Your traine
 
 Here's the overview of the training week. Happy hacking!
   
-- [Day 1 - Azure Fundamentals](day1/README.md)
-- [Day 2 - Application Development ](day2/README.md)
-- [Day 3 - Data and AI](day3/README.md)
-- [Day 4 - DevOps and Monitoring](day4-azdevops/README.md)
-- [Day 5 - Identity and Architectures](day5/README.md)
-- [Day 6 - Containerization](day6/README.md)
-- [Day 7 - Kubernetes](day7/README.md)
-
+- [Lab 1 - Serverless Development](day2/README.md)
+- [Lab 2 - Containerization on Azure](day6/README.md)
 
 ## Contributing ##
 

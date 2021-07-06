@@ -26,5 +26,5 @@ The exerices above are only piece of the larger appliation. As we are constraine
 ### Result 
 
 At the end of the serverless lab 
- - Create a event drive function which reacts upon file uploads and resized an image 
+ - Create a event driven function which reacts upon image upload to a storage account and creates a thumbnail image as an output 
  - Create a logic app which consumer an Service bus topic and places the content into a storage account 
