@@ -118,8 +118,9 @@ $ az account set -s <SUBSCRIPTIONID_YOU_WANT_TO_USE>
 
 ## Install Azure functions Runtime
 
-For this lab we require azure functions runtime.
+For this lab we require azure functions runtime. 
 
+- Download the Azure functions binary and install. 
 - <https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#v2>
 ![Functions Runtime](./images/day2.extension11.png "VS Code Extensions")
 
