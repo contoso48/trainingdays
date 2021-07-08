@@ -1,4 +1,4 @@
-# Day 2 Azure Development
+# Lab 1 Serverless  Azure Development
 
 ## Welcome
 

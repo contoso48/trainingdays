@@ -1,10 +1,11 @@
-# Challenge 5: Azure Container Services
+# Lab 2: Azure Container Services
 
 ## Here is what you'll learn
 
 - Creating Azure Container Registry Instance
 - Pushing images that we have built to ACR
 - Creating first AKS cluster and deploying phpapp application
+- Creating an application using Azure Container instances  
 
 In this challenge, we're gonna create our ACR and AKS instances and deploy a php based webapp that we have containerized at the end of challenge 4.
 

@@ -1,4 +1,4 @@
-# Day 6 Containerization
+# Lab2  Containerization
 
 ## Goal
 
@@ -12,8 +12,6 @@ The main goal of this Lab section is to demostrated how to use Azure to build, d
 
 - Container Services on Azure
   - Container Instances
-  - App Service
-  - Batch
   - Azure Service Fabric
   - Azure Red Hat OpenShift
   - Azure Container Registry (ACR)
