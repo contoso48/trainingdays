@@ -65,7 +65,6 @@ Login Succeeded
 
 ```
 
-<img src="./img/acr8.png">
 
 - We could successfully logged in. This means that from now on we can push images to this registry. For this lab we will not be pushing local images to the registry due to limitations in the virtual machine. Instead we are going to build images
 
@@ -104,6 +103,7 @@ az acr build --image  php:v1 --registry $registryname --file Dockerfile .
 
 - We can now verify if our image has being built and pushed to our registry  by navigating to our registry and click ``repositories``  to view the uploaded image
 <img src="./img/acr_ivan5.png">
+
 - Alternatively we could see the list of images using the command line ``repositories``
  <img src="./img/acr_ivan6.png">
 
