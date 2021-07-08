@@ -10,6 +10,7 @@ In detail, we will use:
 
 - _Azure Service Bus_ for pub/sub scenarios (Consumer/Producer pattern)
 - _Azure Logic Apps_ to subscribe to topics and process them
+<img src="./images/logicapps.png">
 
 ## Table Of Contents
 
@@ -118,6 +119,8 @@ In the Portal create a new _Azure Logic App_:
 When the Logic App has been deployed:
 
 - Open it in the Portal
+-	At the left Menu Click “Workflow”
+-	Click Logic App Designer
 - Click on **"Blank logic App"** in the _Templates_ section
 - Search for **"service bus topic"** in the search box
 - Choose **"When a message is received in a topic subscription (auto-complete)**.
@@ -149,7 +152,7 @@ Back in the Logic App, you need to add a new step:
 - Select **"Create Blob"** from the suggested Actions
 - Enter a name for the _connection_ and choose the appropriate Storage Account
 - Click **"Create"**.
-
+  
 Configure the action:
 
 - Choose the container to store the messages to (_Folder Path_).

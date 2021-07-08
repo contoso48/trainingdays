@@ -3,11 +3,11 @@
 ## Welcome
 
 This day is about getting your hands dirty with application development in Azure. The focus here will be Serverless applications using functions and Logic Apps. We will dig into the topics
+<img src="./challenges/images/thumbnail.png">
 
 - Serverless
 - Storage
 - Messaging
-
 
 ## Challenges
 
@@ -18,13 +18,13 @@ This day is about getting your hands dirty with application development in Azure
 - [Optional Challenge 3: Azure Web Applications](challenges/01-challenge-appservice.md) *(45 min.)*
 - 💎 *[Breakout 1: Deploy the Azure Dev College sample application to Azure](challenges/02-challenge-bo-1.md)* 💎 *(30 min.)*
 
-
 ### Application
+
 The exerices above are only piece of the larger appliation. As we are constrained by time we  have select a subset of the labs to complete. If wish step through the entire lab I recommend navigating to the original source material [training](https://github.com/azuredevcollege/trainingdays/tree/master/day2)
 
+### Result
 
-### Result 
+At the end of the serverless lab
 
-At the end of the serverless lab 
- - Create a event driven function which reacts upon image upload to a storage account and creates a thumbnail image as an output 
- - Create a logic app which consumer an Service bus topic and places the content into a storage account 
+- Create a event driven function which reacts upon image upload to a storage account and creates a thumbnail image as an output
+- Create a logic app which consumer an Service bus topic and places the content into a storage account

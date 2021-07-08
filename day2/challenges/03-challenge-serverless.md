@@ -8,6 +8,7 @@
 - Learn how to debug Azure Functions
 - Learn how to use Function Triggers to react to events in Azure
 - Deploy Azure Functions
+<img src="./images/thumbnail.png">
 
 ## Table Of Contents
 
