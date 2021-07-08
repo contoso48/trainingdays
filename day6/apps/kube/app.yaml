@@ -15,28 +15,28 @@ spec:
       nodeSelector:
         "beta.kubernetes.io/os": linux
       containers:
-      - name: mysqldb
-        image: day6demo.azurecr.io/mysql:v1 # update the image name
-        ports:
-        - containerPort: 3306
-          name: mysqldb
-        env:
-        - name: MYSQL_DATABASE
-          value: "project"
-        - name: MYSQL_USER
-          value: "projectmaster"
-        - name: MYSQL_PASSWORD
-          value: "master1234"
-        - name: MYSQL_ROOT_PASSWORD
-          value: "master1234"
+        - name: mysqldb
+          image: acrreg22.azurecr.io/mysql:v1 # update the image name
+          ports:
+            - containerPort: 3306
+              name: mysqldb
+          env:
+            - name: MYSQL_DATABASE
+              value: "project"
+            - name: MYSQL_USER
+              value: "projectmaster"
+            - name: MYSQL_PASSWORD
+              value: "master1234"
+            - name: MYSQL_ROOT_PASSWORD
+              value: "master1234"
 ---
 apiVersion: v1
 kind: Service
-metadata: 
+metadata:
   name: mysqldb
 spec:
   ports:
-  - port: 3306
+    - port: 3306
   selector:
     app: mysqldb
 ---
@@ -53,7 +53,7 @@ spec:
     rollingUpdate:
       maxSurge: 1
       maxUnavailable: 1
-  minReadySeconds: 5 
+  minReadySeconds: 5
   template:
     metadata:
       labels:
@@ -62,24 +62,24 @@ spec:
       nodeSelector:
         "beta.kubernetes.io/os": linux
       containers:
-      - name: phpapp
-        image: day6demo.azurecr.io/php:v1 # update the image name
-        ports:
-        - containerPort: 80
-        resources:
-          requests:
-            cpu: 250m
-          limits:
-            cpu: 500m
-        env:
-        - name: DB_SERVER
-          value: "mysqldb"
-        - name: DB_USERNAME
-          value: "projectmaster"
-        - name: DB_PASS
-          value: "master1234"
-        - name: DB_NAME
-          value: "project"
+        - name: phpapp
+          image: acrreg22.azurecr.io/php:v1 # update the image name
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 250m
+            limits:
+              cpu: 500m
+          env:
+            - name: DB_SERVER
+              value: "mysqldb"
+            - name: DB_USERNAME
+              value: "projectmaster"
+            - name: DB_PASS
+              value: "master1234"
+            - name: DB_NAME
+              value: "project"
 ---
 apiVersion: v1
 kind: Service
@@ -88,6 +88,6 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 80
+    - port: 80
   selector:
     app: phpapp

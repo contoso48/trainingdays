@@ -31,7 +31,7 @@ To be able to follow all the challenges provided in this workshop, you need a fe
 | _Region_ | West  Europe |
 | _Availability options_ | No infrastructure redundancy required   |
 | _Image_ | Data Science Virtual MAchine - Windows Server 2019 - Gen1 |
-| _Size_ | DS3_v2 -4vcpu, 14GB memory|
+| _Size_ | Standard D2s v3  - 2vcpu, 8GB memory  **important: required for running docker**|
 |_Username_|  **not** 'Admin' **nor** 'Administrator' **nor** 'root' |
 |_Password_ | %complex enough% |
 
@@ -61,9 +61,8 @@ To be able to follow all the challenges provided in this workshop, you need a fe
 
 ## Azure CLI
 
-We will also be using the Azure command-line interface to create and interact with resources running in Azure. To install it, go to <https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest> and choose your platform.
-
-When finished, login to your Azure account from the command-line:
+We will also be using the Azure command-line interface to create and interact with resources running in Azure. This is already installed on the vm.
+Start command prompt and  login to your Azure account from the command-line:
 
 ```shell
 $ az login
@@ -118,9 +117,9 @@ $ az account set -s <SUBSCRIPTIONID_YOU_WANT_TO_USE>
 
 ## Install Azure functions Runtime
 
-For this lab we require azure functions runtime. 
+For this lab we require azure functions runtime.
 
-- Download the Azure functions binary and install. 
+- Download the Azure functions binary and install.
 - <https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#v2>
 ![Functions Runtime](./images/day2.extension11.png "VS Code Extensions")
 
@@ -143,6 +142,11 @@ Search and install the following extensions: Click the below links and follow in
 📝 The _Azure Functions_ extension should have already been installed as part of the _Azure Tools_ extension, but you additionally need to make sure to follow the OS-specific instructions.
 :::
 
+## Install kubectl 
+You will need to kubectl to interact with the kubernetes cluster. To install on windows exectute the following command in a command prompt.
+```shell
+choco install kubernetes-cli -y
+```
 ## Reboot VM
 
 After the functions runtime and the Azure extensions are install please reboot the virtual machine. This should be done in the Azure portal
