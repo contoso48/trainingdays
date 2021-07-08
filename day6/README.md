@@ -2,7 +2,7 @@
 
 ## Goal
 
-The main goal of this Lab section is to demostrated how to use Azure to build, deploy and manage containers. In this lab you  will build and store a set of images using Azure Container Registry, you will provision a Azure Kubernetes Service cluster and deploy the built images from ACR. As a bonus task you can also deploy the same application to ACI. 
+The main goal of this Lab section is to demostrated how to use Azure to build, deploy and manage containers. In this lab you  will build and store a set of images using Azure Container Registry, you will provision a Azure Kubernetes Service cluster and deploy the built images from ACR. As a bonus task you can also deploy the same application to ACI.
 
 ---
 
@@ -12,8 +12,6 @@ The main goal of this Lab section is to demostrated how to use Azure to build, d
 
 - Container Services on Azure
   - Container Instances
-  - Azure Service Fabric
-  - Azure Red Hat OpenShift
   - Azure Container Registry (ACR)
   - Azure Kubernetes Service (AKS)
 
@@ -26,6 +24,5 @@ The main goal of this Lab section is to demostrated how to use Azure to build, d
 - Clean-up
 
 **[Challenge 6: Self-learning](./challenges/challenge6.md)**
-
 
 ---
