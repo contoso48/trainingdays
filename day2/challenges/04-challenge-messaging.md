@@ -22,8 +22,8 @@ In detail, we will use:
 ## Azure Service Bus Publish / Subscriber Pattern
 
 ### Clone the project
-
-* open command prompt and execute the following 
+The consumer application for generating messages 
+- open command prompt and execute the following 
 -  git clone https://github.com/ivanthelad/trainingdays.git
 
 ### Create an Azure Service Bus Namespace
