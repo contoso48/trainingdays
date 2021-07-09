@@ -21,6 +21,11 @@ In detail, we will use:
 
 ## Azure Service Bus Publish / Subscriber Pattern
 
+### Clone the project
+
+* open command prompt and execute the following 
+-  git clone https://github.com/ivanthelad/trainingdays.git
+
 ### Create an Azure Service Bus Namespace
 
 To use Azure Service Bus, you first need to create a _namespace_ with a globally unique name. As done before with other services:
@@ -119,8 +124,8 @@ In the Portal create a new _Azure Logic App_:
 When the Logic App has been deployed:
 
 - Open it in the Portal
--	At the left Menu Click “Workflow”
--	Click Logic App Designer
+- At the left Menu Click “Workflow”
+- Click Logic App Designer
 - Click on **"Blank logic App"** in the _Templates_ section
 - Search for **"service bus topic"** in the search box
 - Choose **"When a message is received in a topic subscription (auto-complete)**.
